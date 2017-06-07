@@ -12,6 +12,9 @@ start : mov ax,@data
 again : mov si,offset FIRE
         call disp
         call delay
+        mov si,offset HELP
+        call disp 
+        call delay
         dec bh
         cmp bh,00h
         je terminate
